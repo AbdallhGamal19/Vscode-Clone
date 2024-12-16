@@ -1,50 +1,35 @@
-# React + TypeScript + Vite
+# Vscode-Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A web-based clone of the popular Visual Studio Code editor, built with React.js, Redux Toolkit, and other essential libraries. This app aims to replicate the features and interface of VS Code, allowing users to experience a simplified editor in the browser.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Resizable Panels**: Allows users to resize editor panes dynamically for better layout control.
+- **Syntax Highlighting**: Provides syntax highlighting for different programming languages.
+- **State Management**: Efficiently manages the app's state using Redux Toolkit.
+- **Unique User Sessions**: Generates unique session identifiers for each user using `uuid`.
 
-## Expanding the ESLint configuration
+## Resources Used
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### 1. **React.js**:
+   - A JavaScript library for building user interfaces. Used for rendering components and managing the application’s frontend.
 
-- Configure the top-level `parserOptions` property like this:
+### 2. **Redux Toolkit**:
+   - Used for managing the application’s state. Redux Toolkit simplifies the Redux setup and provides features like `createSlice` to manage actions and reducers easily.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### 3. **react-resizable-panels**:
+   - A library that enables users to resize panels within the application, mimicking the resizable panels in Visual Studio Code.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### 4. **react-syntax-highlighter**:
+   - Provides syntax highlighting for code. It supports various programming languages, making it easier to read and understand code snippets.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+### 5. **uuid (v11.0.3)**:
+   - A library used to generate unique identifiers (UUIDs) for sessions, ensuring each user's session is uniquely identifiable.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Installation
+
+To run the project locally, follow these steps:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/AbdallhGamal19/Vscode-Clone.git
