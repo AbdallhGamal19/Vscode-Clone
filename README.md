@@ -1,7 +1,6 @@
 # Vscode-Clone
 
-A web-based clone of the popular Visual Studio Code editor, built with React.js, Redux Toolkit, and other essential libraries. This app aims to replicate the features and interface of VS Code, allowing users to experience a simplified editor in the browser.
-
+A web-based clone of the popular Visual Studio Code editor, built with React.js, Redux Toolkit.
 ## Features
 
 - **Resizable Panels**: Allows users to resize editor panes dynamically for better layout control.
